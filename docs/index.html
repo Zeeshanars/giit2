@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes meriAnimation{
+
+            0%{
+                right:0;
+                top:0;
+            }
+
+            20%{
+                right: 200px;
+                top:250px;
+            }
+
+            40%{
+                right: 400px;
+                top:0;
+            }
+
+            60%{
+                right: 600px;
+                top:250px;
+            }
+
+            80%{
+                right: 600px;
+                top:0px;
+            }
+
+            100%{
+                right: 800px;
+                top:250px;
+            }
+
+        }
+
+        #tank{
+            width:100px;
+            position: absolute;
+            right: 0;
+            top:0;
+            animation: meriAnimation 10s ease-in-out 0s;
+            animation-fill-mode: forwards;
+
+            /* transition: right 10s ease-in-out 0s; */
+        }
+
+        @keyframes copterAnimation{
+
+            0%{
+                top:80%;
+                right: 0;
+            }
+
+            20%{
+                top:0%;
+                right:0;
+            }
+
+            40%{
+                top:0%;
+                right:80%;
+            }
+            100%{
+                top:80%;
+                right: 80%;
+            }
+
+        }
+
+        #copter{
+            width: 100px;
+            position: absolute;
+            right: 0;
+            top:80%;
+            animation: copterAnimation 10s linear 0s;
+            animation-fill-mode: forwards;
+        }
+
+        /* transitions, start se end tak */
+
+        @keyframes boxKiAnimation{
+            /* from{
+                background-color: red;
+            }
+
+            to{
+
+            } */
+
+
+             0%{
+                background-color: red;
+            }
+
+            20%{
+                background-color: blue;
+            }
+
+            40%{
+                background-color: magenta;
+            }
+
+            60%{
+                background-color: green;
+
+            }
+
+            80%{
+                background-color: yellow;
+
+            } 
+        
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: boxKiAnimation 10s linear 0s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+
+    <!-- <img id="tank" src="tank.png" alt=""> -->
+    <img id="copter" src="coper.png" alt="">
+    
+</body>
+</html>
